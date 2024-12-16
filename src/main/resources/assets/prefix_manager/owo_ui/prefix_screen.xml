@@ -1,0 +1,49 @@
+<owo-ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/wisp-forest/owo-lib/1.20/owo-ui.xsd">
+    <components>
+        <flow-layout direction="vertical">
+            <children>
+                <!-- Фон -->
+                <flow-layout direction="vertical">
+                    <surface>
+                        <panel dark="true" alpha="0.95"/>
+                    </surface>
+                </flow-layout>
+
+                <!-- Основной контейнер -->
+                <flow-layout direction="vertical">
+                    <children>
+                        <!-- Заголовок -->
+                        <label>
+                            <text>§fПрефиксы</text>
+                            <shadow>true</shadow>
+                            <margins>
+                                <top>12</top>
+                                <bottom>4</bottom>
+                            </margins>
+                        </label>
+
+                        <!-- Сетка префиксов -->
+                        <grid-layout id="prefix-grid" rows="4" columns="6">
+                            <surface>
+                                <vanilla-translucent alpha="0.1"/>
+                            </surface>
+                            <padding>
+                                <all>10</all>
+                            </padding>
+                            <gap>6</gap>
+                            <horizontal-alignment>center</horizontal-alignment>
+                        </grid-layout>
+                    </children>
+
+                    <horizontal-alignment>center</horizontal-alignment>
+                    <vertical-alignment>center</vertical-alignment>
+                    <padding>
+                        <vertical>15</vertical>
+                        <horizontal>20</horizontal>
+                    </padding>
+                </flow-layout>
+            </children>
+        </flow-layout>
+    </components>
+</owo-ui> 
